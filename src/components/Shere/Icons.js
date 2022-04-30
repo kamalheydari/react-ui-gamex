@@ -39,7 +39,7 @@ const bigIcon = css`
 
 const normalIcon = css`
   width: 30px;
-  height 30px;
+  height: 30px;
   fill: var(--white);
 `;
 
