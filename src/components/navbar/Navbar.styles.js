@@ -4,10 +4,13 @@ import Screen from "../../styles/Screen";
 const NavbarStyles = styled.div`
   background: var(--raisin-black-3);
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
   ${Screen.lg`
-    position:relative;
-    
     &::after,
     &::before {
         content: "";
@@ -30,24 +33,27 @@ const NavbarStyles = styled.div`
     `}
 
   .content {
-    height: 5.5rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .navbar__button {
     ${Screen.lg`
     display: none;
     `}
   }
-  .navbar__nav,
+
+  .navbar__nav ul,
   .navbar__actions {
     display: none;
     ${Screen.lg`
     display: flex;
-    gap:0.8rem
+    gap:0.3rem
     `}
   }
+
   .navbar__actions {
     gap: 1rem;
     align-items: center;
@@ -61,12 +67,14 @@ const NavbarStyles = styled.div`
       background-color: var(--raisin-black-2);
       padding: 0.3rem 0.8rem;
       border-right: 0.3rem solid var(--orange);
+
       &:hover span {
         color: var(--orange);
       }
       &:hover svg {
         fill: var(--orange);
       }
+
       span {
         color: var(--light-gray);
         margin-left: 0.5rem;
@@ -78,22 +86,11 @@ const NavbarStyles = styled.div`
   }
 
   .navbar__nav {
-    gap: 0;
     a {
       position: relative;
-      color: var(--platinum);
-      padding-block: 34px;
       border: none;
-      font-family: var(--ff-oswald);
-      text-transform: uppercase;
-      letter-spacing: 1px;
       z-index: 1;
-      padding: 2.1rem 1rem;
-
-      ${Screen.xl`
-        font-size:var(--fs-7);
-        padding: 1.9rem 1rem;
-      `}
+      padding: 2.2rem 0.8rem;
 
       &::after {
         content: "";
