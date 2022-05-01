@@ -9,8 +9,9 @@ const SidebarStyles = styled.div`
   bottom: 0;
   right: ${(props) => (props.isSidebarOpen ? "0" : "-100%")};
   transition: var(--transition-3);
-  box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
   z-index: 2;
+  ${(props) =>
+    props.isSidebarOpen && `box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);`}
 
   ${Screen.lg`
     display:none
@@ -22,6 +23,10 @@ const SidebarStyles = styled.div`
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--gray);
+
+    img{
+      width:8rem;
+    }
   }
 
   .sidebar__nav {
@@ -32,7 +37,8 @@ const SidebarStyles = styled.div`
       display: inline-block;
       width: 100%;
       border-bottom: 1px solid var(--gray);
-      padding: 0.5rem 0.8rem;
+      padding: 1.5rem 0.8rem;
+      font-size: var(--fs-12);
       color: var(--platinum);
       font-weight: var(--fw-500);
       transition: var(--transition-2);
@@ -49,7 +55,7 @@ const SidebarStyles = styled.div`
     justify-content: center;
     gap: 0.8rem;
   }
-  
+
   .sidebar__overlay {
     position: fixed;
     inset: 0;

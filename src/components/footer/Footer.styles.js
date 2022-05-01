@@ -24,7 +24,7 @@ const FooterStyles = styled.footer`
     `}
 
     img {
-      width: 200px;
+      width: 8rem;
     }
 
     ul {

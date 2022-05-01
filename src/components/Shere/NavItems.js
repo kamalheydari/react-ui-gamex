@@ -31,6 +31,7 @@ const NavItemsStyles = styled.nav`
     padding: 0.3rem;
     font-weight: var(--fw-500);
     letter-spacing: 1px;
+    font-size: var(--fs-12);
     &:is(:hover) {
       color: var(--orange);
     }

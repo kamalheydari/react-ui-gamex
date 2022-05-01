@@ -17,6 +17,7 @@ const TeamStyles = styled.section`
     li {
       border: 0.3rem solid transparent;
       border-radius: 50%;
+      width: min(100%, 10rem);
       transition: var(--transition-2);
       position: relative;
       cursor: pointer;

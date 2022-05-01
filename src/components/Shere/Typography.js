@@ -17,19 +17,19 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${baseTitleStyle}
   letter-spacing: 3px;
-  font-size: var(--fs-2);
+  font-size: var(--fs-6);
 `;
 
 const H3 = styled.h3`
   ${baseTitleStyle}
   letter-spacing: 2px;
-  font-size: var(--fs-3);
+  font-size: var(--fs-8);
 `;
 
 const H4 = styled.h4`
   ${baseTitleStyle}
   letter-spacing: 2px;
-  font-size: var(--fs-4);
+  font-size: var(--fs-10);
 `;
 
 const SubTitle = styled.p`
@@ -37,12 +37,13 @@ const SubTitle = styled.p`
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   font-family: var(--ff-oswald);
-  font-size: var(--fs-6);
+  font-size: var(--fs-10);
   font-weight: var(--fw-500);
-`;
+  `;
 
 const Text = styled.p`
   letter-spacing: 1px;
+  font-size: var(--fs-12);
   color: var(--platinum);
 `;
 

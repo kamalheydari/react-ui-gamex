@@ -8,10 +8,11 @@ const TournamentStles = styled.section`
   padding: 2rem 1rem;
   text-align: center;
   padding-bottom: 6rem;
-
+  
   ${Screen.lg`
   align-items: stretch;
   flex-direction: row;
+  gap: 2rem;
   `}
 
   .info__btn {
@@ -31,6 +32,7 @@ const TournamentStles = styled.section`
     background-color: var(--raisin-black-1);
     border-radius: 0.5rem;
     width: 100%;
+    padding: 1.5rem;
   }
 
   .prize__conunt {
@@ -56,6 +58,7 @@ const TournamentStles = styled.section`
     margin-top: 0.5rem;
     border-radius: 0.3rem;
     padding: 0.3rem 0.5rem;
+    font-size: var(--fs-11);
   }
 `;
 

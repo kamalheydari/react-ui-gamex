@@ -7,9 +7,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
     <NavbarStyles>
       <Container>
         <div className='content'>
-          <div className='navbar__log'>
-            <img src={Logo} alt='logo GameX' />
-          </div>
+            <img src={Logo} alt='logo GameX'  className='navbar__logo' />
           <NavItems className='navbar__nav' />
           <div className='navbar__actions'>
             <div className='action__search'>

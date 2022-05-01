@@ -4,6 +4,7 @@ import Screen from "../../styles/Screen";
 const NavbarStyles = styled.div`
   background: var(--raisin-black-3);
   box-shadow: 0 3px 27px hsla(0, 0%, 0%, 0.5);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -31,6 +32,10 @@ const NavbarStyles = styled.div`
         clip-path: var(--polygon-3);
     }
     `}
+
+  .navbar__logo {
+    width: 8rem;
+  }
 
   .content {
     height: var(--header-height);

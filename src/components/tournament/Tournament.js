@@ -12,7 +12,7 @@ const Tournament = () => {
           <Typography.H3>
             Gaming
             <br />
-            tournaments !
+            tournaments!
           </Typography.H3>
           <Typography.Text>
             Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et

@@ -39,8 +39,9 @@ const NewslatterStyles = styled.section`
       border: 1px solid var(--white);
       background-color: #0000004b;
       color: var(--white);
-      padding: 0.5rem;
+      padding: 1rem;
       margin-bottom: 1.2rem;
+      font-size: var(--fs-11);
       transition: var(--transition-2);
       width: 90%;
 

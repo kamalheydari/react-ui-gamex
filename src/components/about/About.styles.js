@@ -132,10 +132,10 @@ const AboutStyles = styled.section`
   }
   
   .about__text {
-    margin-bottom: 1rem;
+    margin-block: 1rem;
   }
   .about__btn{
-    padding:0.5rem 0.8rem ;
+    padding:0.3rem 0.8rem ;
   }
 `;
 

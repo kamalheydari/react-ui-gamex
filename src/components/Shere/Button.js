@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const Button = styled.button`
   color: var(--white);
   font-family: var(--ff-oswald);
-  font-size: var(--fs-6);
+  font-size: var(--fs-11);
   font-weight: var(--fw-500);
   letter-spacing: 1px;
   text-transform: uppercase;

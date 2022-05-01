@@ -28,7 +28,7 @@ import {
 
 //? base styles
 const bigIcon = css`
-  width: 60px;
+  width: 4rem;
   color: var(--orange);
   transition: var(--transition-1);
   cursor: pointer;
@@ -38,14 +38,14 @@ const bigIcon = css`
 `;
 
 const normalIcon = css`
-  width: 30px;
-  height: 30px;
+  width: 3.5rem;
+  height: 3.5rem;
   fill: var(--white);
 `;
 
 const smallIcon = css`
-  width: 25px;
-  height: 25px;
+  width: 3rem;
+  height: 3rem;
   fill: var(--white);
   color: var(--white);
 
@@ -86,17 +86,17 @@ const LinkStyled = styled(Link)`
   ${normalIcon}
 `;
 const ClockStyled = styled(Clock)`
-  ${normalIcon}
+  ${smallIcon}
 `;
 const HeartStyled = styled(Heart)`
   ${normalIcon}
 `;
 const ShareStyled = styled(Share)`
-  ${smallIcon}
+  ${normalIcon}
   fill: var(--orange);
   border: 1px solid var(--onyx);
   border-radius: 50%;
-  padding: 0.3rem;
+  padding: 0.2rem;
   &:is(:hover) {
     border: 1px solid var(--white);
     fill: var(--white);
@@ -117,9 +117,13 @@ const PlayCircleFilledStyled = styled(PlayCircleFilled)`
 `;
 const SearchStyled = styled(Search)`
   ${smallIcon}
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 const LoginStyled = styled(Login)`
   ${smallIcon}
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 const ArrowForwardStyled = styled(ArrowForward)`
   ${smallIcon}

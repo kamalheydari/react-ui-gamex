@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Screen from "./Screen";
 
 //? fonts
 import "@fontsource/audiowide";
@@ -9,19 +10,15 @@ import "@fontsource/poppins/500.css";
 import "@fontsource/oswald/500.css";
 import "@fontsource/oswald/700.css";
 
-
 const GlobalStyle = createGlobalStyle`
   
   /* RESET */
-  *,::afer,::before{
+  *,::after,::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  p,h2,h4{
-    margin: 0;
-  }
-  
+
   a {
     text-decoration: none;
   }
@@ -30,25 +27,31 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
   
-  ul{
-    padding: 0;
-    margin: 0;
-  }
-  
   button {
     background: none;
     border: none;
     cursor: pointer;
+    
   }
-  
   
   input {
     font: inherit;
     outline:none;
+    border: none;
   }
   
   html {
     scroll-behavior: smooth;
+    font-size:10px;
+    ${Screen.sm`
+      font-size:12px;
+    `}
+    ${Screen.md`
+      font-size:13px;
+    `}
+    ${Screen.lg`
+      font-size:14px;
+    `}
   }
   
   body{
@@ -76,17 +79,20 @@ const GlobalStyle = createGlobalStyle`
   --ff-oswald: "Oswald", sans-serif;
   --ff-poppins: "Poppins", sans-serif;
 
-  --fs-1: 90px;
-  --fs-2: 40px;
-  --fs-3: 34px;
-  --fs-4: 26px;
-  --fs-5: 22px;
-  --fs-6: 20px;
-  --fs-7: 18px;
-  --fs-8: 15px;
-  --fs-9: 14px;
-  --fs-10: 13px;
-  --fs-11: 12px;
+  --fs-1: 6rem;
+  --fs-2: 5.5rem;
+  --fs-3: 5rem;
+  --fs-4: 4.5rem;
+  --fs-5: 4rem;
+  --fs-6: 3rem;
+  --fs-7: 3.5rem;
+  --fs-8: 3rem;
+  --fs-9: 2.5rem;
+  --fs-10: 2rem;
+  --fs-11: 1.5rem;
+  --fs-12: 1rem;
+  --fs-13: 0.8rem;
+  --fs-14: 0.6rem;
 
   --fw-400: 400;
   --fw-500: 500;
@@ -99,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
   --transition-4: 0.5s ease-out;
 
   /* SPACING */
-  --header-height: 6rem;
+  --header-height:6rem;
 
   /* CLIP PATH */
   --polygon-1: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);

@@ -3,7 +3,8 @@ import { GearsBg } from "../../assets/images";
 import Screen from "../../styles/Screen";
 
 const GearsStyles = styled.section`
-  padding: 4rem 0.8rem;
+  padding: 4rem 0rem;
+  min-height: calc(100vh - var(--header-height));
 
   .gears {
     display: grid;
@@ -20,7 +21,7 @@ const GearsStyles = styled.section`
   }
 
   .gear {
-    width: min(100%, 450px);
+    width: min(100%, 470px);
   }
 
   .gear__header {
@@ -37,8 +38,8 @@ const GearsStyles = styled.section`
 
     .header__time {
       position: absolute;
-      right: 20px;
-      top: 12px;
+      right: 0.8rem;
+      top: 0.3rem;
       color: var(--platinum);
       display: flex;
       align-items: center;
@@ -46,12 +47,29 @@ const GearsStyles = styled.section`
       text-transform: uppercase;
 
       ${Screen.xl`
-      font-size:var(--fs-11);
-      top: 8px;
-      svg{
-        width:25px;
+      top: 0.2rem;
+      `}
+
+      svg {
+        width: 2rem;
       }
-    `}
+
+    span {
+      padding: 0.5rem;
+      font-size: var(--fs-12);
+      
+      @media (min-width:370px){
+        font-size: var(--fs-11);
+      }
+
+      ${Screen.lg`
+      font-size: var(--fs-12);
+      `}
+
+      ${Screen.xl`
+      font-size:var(--fs-13);
+      `}
+      }
     }
 
     .header__share {
@@ -73,7 +91,7 @@ const GearsStyles = styled.section`
     margin-bottom: 1.5rem;
 
     .desc__price {
-      font-size: var(--fs-5);
+      font-size: var(--fs-9);
       font-weight: var(--fw-700);
     }
   }
