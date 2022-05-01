@@ -33,7 +33,7 @@ const NavbarStyles = styled.div`
     `}
 
   .content {
-    height: 6rem;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;

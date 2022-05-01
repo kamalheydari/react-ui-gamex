@@ -5,7 +5,10 @@ import SidebarStyles from "./Sidebar.styles";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <SidebarStyles isSidebarOpen={isSidebarOpen}>
-      <div className="sidebar__overlay"onClick={() => setIsSidebarOpen(false)}/>
+      <div
+        className='sidebar__overlay'
+        onClick={() => setIsSidebarOpen(false)}
+      />
       <div className='sidebar__header'>
         <img src={Logo} alt='Game - x logo' />
         <Icons.MenuCloseStyled onClick={() => setIsSidebarOpen(false)} />

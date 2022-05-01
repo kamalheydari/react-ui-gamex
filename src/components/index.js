@@ -1,10 +1,18 @@
-export {default as About} from './about/About'
-export {default as Footer} from './footer/Footer'
-export {default as Gallery} from './gallery/Gallery'
-export {default as Gears} from './gears/Gears'
-export {default as Hero} from './hero/Hero'
-export {default as Navbar} from './navbar/Navbar'
-export {default as NewsLatter} from './newsLatter/NewsLatter'
-export {default as Sidebar} from './sidebar/Sidebar'
-export {default as Team} from './team/Team'
-export {default as Tournament} from './tournament/Tournament'
+export { default as About } from "./about/About";
+export { default as Footer } from "./footer/Footer";
+export { default as Gallery } from "./gallery/Gallery";
+export { default as Gears } from "./gears/Gears";
+export { default as Hero } from "./hero/Hero";
+export { default as Navbar } from "./navbar/Navbar";
+export { default as NewsLatter } from "./newsLatter/NewsLatter";
+export { default as Sidebar } from "./sidebar/Sidebar";
+export { default as Team } from "./team/Team";
+export { default as Tournament } from "./tournament/Tournament";
+export { default as Header } from "./header/Header";
+export { default as Container } from "./Shere/Container";
+export { default as NavItems } from "./Shere/NavItems";
+export { default as Icons } from "./Shere/Icons";
+export { default as Typography } from "./Shere/Typography";
+export { default as Button } from "./Shere/Button";
+export { default as SectionTitle } from "./Shere/SectionTitle";
+export { default as SectionWrapper } from "./secitonsWrapper/SectionWrapper.styles";

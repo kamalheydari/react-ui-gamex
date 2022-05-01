@@ -1,0 +1,16 @@
+export { default as Logo } from "./logo.svg";
+export { default as HeroBanner } from "./hero-banner.jpg";
+export { default as SectionWrapperImg } from "./section-wrapper-bg.jpg";
+export { default as AboutImg } from "./about-img.png";
+export { default as AboutImgShadow } from "./about-img-shadow.png";
+export { default as Character1 } from "./character-1.png";
+export { default as Character2 } from "./character-2.png";
+export { default as Character3 } from "./character-3.png";
+export { default as PrizeImg } from "./prize-img.png";
+export { default as Winner1 } from "./winner-img-1.png";
+export { default as Winner2 } from "./winner-img-2.png";
+export { default as GearsBg } from "./gears-card-bg.png";
+export { default as NewsletterBg } from "./newsletter-bg.jpg";
+export { default as NewsletterImg } from "./newsletter-img.png";
+export { default as FooterBg } from "./footer-bg.jpg";
+export { default as FooterPaymentImg } from "./footer-bottom-img.png";

@@ -1,22 +1,36 @@
+import {
+  About,
+  Header,
+  Hero,
+  SectionWrapper,
+  Tournament,
+  Gallery,
+  Team,
+  Gears,
+  NewsLatter,
+  Footer,
+} from "./components";
 
+//? global style
+import GlobalStyle from "./styles/GlobalStyle";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <main>
+        <Hero />
+        <SectionWrapper>
+          <About />
+          <Tournament />
+          <Gallery />
+          <Team />
+          <Gears />
+          <NewsLatter />
+          <Footer />
+        </SectionWrapper>
+      </main>
+    </>
   );
 }
 

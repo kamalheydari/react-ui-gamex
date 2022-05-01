@@ -1,6 +1,7 @@
 import { Logo } from "../../assets/images";
 import { NavItems, Icons, Container } from "..";
 import NavbarStyles from "./Navbar.styles";
+
 const Navbar = ({ setIsSidebarOpen }) => {
   return (
     <NavbarStyles>
